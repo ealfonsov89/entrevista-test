@@ -1,0 +1,4 @@
+{
+    "jest.jestCommandLine": "npm run react:unit --",
+    "jest.rootPath": "./src"
+}

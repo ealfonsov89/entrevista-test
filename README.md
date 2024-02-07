@@ -1,16 +1,40 @@
-The frontend is a react app using typescript
+# React APP
 
-The api is a dotnet core api connected to as SQLITE database to improve portavility
+The frontend is a react app using typescript.
+
+### Description
+
+This application allow us to preform CRUD action to the customers list.
+
+It's compoused by a formulary to edit or create customers, a table to list 10 customers .
+
+> This is limited because we can have issues with the total amount of customers.
+
+> We have not time to implement pagination.
+
+For eah action performed to the customers list, we print a console table `console.table(customers)`, so you can follow the changes on the webbrowser terminal.
 
 ### To run the react app
+```
+$ cd ./my-app
+$ npm i
+$ npm start
+```
 
-`$ cd ./my-app`
+> you should see the frontend at `http://localhost:3000/`.
 
-`$ npm i`
+# Dotnet core API
 
-`$ npm start`
+The api is a dotnet core api connected to as SQLITE database to improve portavility.
 
-> you should see the frontend at `http://localhost:3000/`
+> Have no time to mout the environment using the database options provided, but as SQLITE is a linked database, it would be simmilar to Azure SQL Server.
+
+We use services injection to perform actions from the controlers.
+
+Also we add entityFramework as ORM to be able to use migrations.
+
+We add a swagger instance to be able to play with the endpoints and generate a documentation.
+
 
 ### To run dotnet core api
 `$ cd ./my-api`

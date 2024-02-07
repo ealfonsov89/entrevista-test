@@ -37,13 +37,13 @@ We add a swagger instance to be able to play with the endpoints and generate a d
 
 
 ### To run dotnet core api
-`$ cd ./my-api`
 
-`$ dotnet restore`
-
-`$ dotnet tool install --global dotnet-ef`
-
-`$ dotnet build`
+```
+$ cd ./my-api
+$ dotnet restore
+$ dotnet tool install --global dotnet-ef
+$ dotnet build
+```
 
 `$ dotnet ef database update --context CustomerContext` > this just if the database is empty
 

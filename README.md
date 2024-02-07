@@ -43,10 +43,8 @@ $ cd ./my-api
 $ dotnet restore
 $ dotnet tool install --global dotnet-ef
 $ dotnet build
+$ dotnet build && dotnet run
 ```
 
-`$ dotnet ef database update --context CustomerContext` > this just if the database is empty
-
-`$ dotnet build && dotnet run`
-
+> `$ dotnet ef database update --context CustomerContext` this just if the database is empty
 > you should be able to see the swagger at `http://localhost:5289/swagger/index.html`

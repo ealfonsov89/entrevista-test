@@ -4,7 +4,7 @@ The frontend is a react app using typescript.
 
 ### Description
 
-This application allow us to preform CRUD action to the customers list.
+This application allow us to preform CRUD actions to the customers list.
 
 It's compoused by a formulary to edit or create customers, a table to list 10 customers .
 
@@ -25,9 +25,9 @@ $ npm start
 
 # Dotnet core API
 
-The api is a dotnet core api connected to as SQLITE database to improve portavility.
+The api is a dotnet core api connected to a SQLITE database to improve portavility.
 
-> Have no time to mout the environment using the database options provided, but as SQLITE is a linked database, it would be simmilar to Azure SQL Server.
+> Have no time to mout the environment using the database options provided on the request, but as SQLITE is a linked database, it would be simmilar to Azure SQL Server.
 
 We use services injection to perform actions from the controlers.
 
@@ -47,4 +47,5 @@ $ dotnet build && dotnet run
 ```
 
 > `$ dotnet ef database update --context CustomerContext` this just if the database is empty
+
 > you should be able to see the swagger at `http://localhost:5289/swagger/index.html`
